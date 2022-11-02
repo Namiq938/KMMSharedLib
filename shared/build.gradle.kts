@@ -48,10 +48,7 @@ kotlin {
                 //1
                 url = uri("https://maven.pkg.github.com/Namiq938/KMMSharedLib")
                 //2
-                credentials {
-                    username = "Namiq938"
-                    password = "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"
-                }
+                credentials(PasswordCredentials::class)
                 authentication {
                     create<BasicAuthentication>("basic")
                 }
