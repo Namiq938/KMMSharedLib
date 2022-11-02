@@ -8,7 +8,7 @@ plugins {
     id("maven-publish")
 }
 
-version = "1.2"
+version = "1.3"
 group = "com.namig.expencecalculator.library"
 
 kotlin {
@@ -39,7 +39,6 @@ kotlin {
             iOS { v("13") }
         }
         //5
-        outputDirectory(File(projectDir, "sharedlib"))
     }
 
     publishing {
