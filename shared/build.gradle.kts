@@ -8,7 +8,7 @@ plugins {
     id("maven-publish")
 }
 
-version = "1.0"
+version = "1.2"
 group = "com.namig.expencecalculator.library"
 
 kotlin {
@@ -48,7 +48,10 @@ kotlin {
                 //1
                 url = uri("https://maven.pkg.github.com/Namiq938/KMMSharedLib")
                 //2
-                credentials(PasswordCredentials::class)
+                credentials {
+                    username = "Namiq938"
+                    password = "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"
+                }
                 authentication {
                     create<BasicAuthentication>("basic")
                 }
